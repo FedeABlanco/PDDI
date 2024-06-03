@@ -1,0 +1,235 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background-color: #222;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.hero-content:hover {
+    transform: scale(1.05);
+}
+
+.hero .btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+.content-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery .item {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery .item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff7f50;
+}
+
+form button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+.hero {
+    background: url('../images/hero-image.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.hero-content:hover {
+    transform: scale(1.05);
+}
+
+.hero .btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.1);
+}
+
+/* Otros estilos */
